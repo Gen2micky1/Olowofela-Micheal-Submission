@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION PAGE</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html"><img src="khan_academy-icon.svg" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="course.html">Courses</a></li>
+            </ul>
+        </div>
+        <div class="register">
+            
+            <form action="progress.html" method="">
+                <h3>Registration Form</h3> <button id="open-btn" type="submit">Click Me</button>
+                <div>
+                    <label for="firstName"> First Name</label><br>
+                    <input type="text" name="name" id="name" required placeholder="Your Name"><br>
+
+                    <label for="lastName"> Last Name</label><br>
+                    <input type="text" name="name" id="name" required placeholder="Surname"><br>
+
+                    <label for="phoneNo"> Phone No.</label><br>
+                    <input type="number" name="number" id="number" requiredplaceholder="09000000"><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" required placeholder="@gmail.com"><br>
+
+                    <label for="course">Course</label><br>
+                    <select name="course" id="course">
+                        <option value="Mathematics">Mathematics</option>
+                        <option label="Art" value="Art"></option>
+                        <option label="Computer programming" value="Computer programming"></option>
+                        <option label="Economics" value="Economics"></option>
+                        <option label="Physics" value="Physics"></option>
+                        <option label="Chemistry" value="Chemistry"></option>
+                        <option label="Biology" value="Biology"></option>
+                        <option label="Medicine" value="Medicine"></option>
+                        <option label="Finance" value="Finance"></option>
+                        <option label="History" value="History"></option>
+                    </select><br>
+                        
+                    <button type="reset">Reset</button>
+                    <button onclick="alert('Are you sure all the information provided is correct')" type="submit">Submit</button>
+
+                    <div id="modal-container">
+                        <div id="modal">
+                                <div class="question">
+                                    <h3>Are you sure?</h3>
+                                    <p>Information is <span>power</span> please give reliable information.</p>
+                                    <div class="button">
+                                        <button  class="btn1">Cancel</button>
+                                        <button id="close-btn" class="btn3">Okay</button>
+                                    </div>
+                                </div>
+                                
+                            
+                            <div id="close-btn">&times</div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <script src="register.js"></script>
+</html>
